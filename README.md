@@ -1,10 +1,10 @@
 # Paper_presentation_DS5690
 
-Sure, here's a draft GitHub README based on the highlights from the first part:
 
 # X-LoRA: Mixture of Low-Rank Adapter Experts
 
-X-LoRA is a flexible framework for creating adaptable large language models by dynamically mixing multiple pre-trained low-rank adapters (LoRA). It enables the development of LLMs with diverse capabilities across different domains.
+X-LoRA is a flexible framework for creating adaptable large language models by dynamically mixing multiple pre-trained low-rank adapters (LoRA). It enables the development of LLMs with diverse capabilities across different domains. 
+The link to the paper: https://arxiv.org/abs/2402.07148
 
 ## Overview
 
