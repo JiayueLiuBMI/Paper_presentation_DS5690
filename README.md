@@ -214,7 +214,8 @@ Despite the disadvantages, the authors argue that the advantage of the X-LoRA ap
 ## Resources
 1. API description and examples: https://github.com/EricLBuehler/xlora/tree/master?tab=readme-ov-file
 2. LoRA overview video: https://towardsdatascience.com/dive-into-lora-adapters-38f4da488ede
-3. X-LoRA overview video: 
+
 
 ## Citation 
-
+1. Buehler, E. L., & Buehler, M. J. (2024, February 11). X-lora: Mixture of low-rank adapter experts, a flexible framework for large language models with applications in protein mechanics and Design. arXiv.org. https://arxiv.org/abs/2402.07148
+2. Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., & Chen, W. (2021, October 16). Lora: Low-rank adaptation of large language models. arXiv.org. https://arxiv.org/abs/2106.09685 
