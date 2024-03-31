@@ -18,8 +18,10 @@ The approach is inspired by biological principles, where neural network building
 - **Granular Adaptation**: The scaling and mixing of LoRA adapters happen at a fine-grained token and layer level, providing a high degree of flexibility.
 - **Efficient Training**: Building upon the low-rank adaptation technique, X-LoRA allows for efficient training by only updating the low-rank matrices associated with each adapter.
 
-## Architecture of X-LoRA![image](https://github.com/JiayueLiuBMI/Paper_presentation_DS5690/assets/35744343/40da3701-9401-4239-95c9-59f1cf22d86b)
+## Architecture of X-LoRA
+<img width="874" alt="image" src="https://github.com/JiayueLiuBMI/Paper_presentation_DS5690/assets/35744343/07bb7a2c-7e5e-42cb-b90b-21c3b45bf684">
 
+<img width="305" alt="image" src="https://github.com/JiayueLiuBMI/Paper_presentation_DS5690/assets/35744343/c9f42f51-1bf2-4ec0-b1e3-e3cd759a79db">
 
 ## Applications
 
