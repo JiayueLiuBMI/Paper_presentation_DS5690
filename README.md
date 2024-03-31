@@ -1,7 +1,3 @@
-# Paper_presentation_DS5690
-ReadMe author:Jiayue Liu
-
-
 # X-LoRA: Mixture of Low-Rank Adapter Experts
 
 X-LoRA is a flexible framework for creating adaptable large language models by dynamically mixing multiple pre-trained low-rank adapters (LoRA). It enables the development of LLMs with diverse capabilities across different domains. 
@@ -76,6 +72,7 @@ The paper focuses on developing an X-LoRA model with scientific capabilities, pa
 - Materials design
 
 ## Getting Started
+See the notebook
 
 Cited from https://huggingface.co/lamm-mit/x-lora
 
@@ -189,5 +186,35 @@ print (output_text[0])
 ```
 
 ### Train individual LoRA adapters for different areas of expertise.
+https://github.com/EricLBuehler/xlora/blob/master/examples/simple.ipynb
 
+
+## Critical Analysis 
+
+Advantages of the X-LoRA (Mixture of Low-Rank Adapter Experts) approach:
+
+1. **Simple implementation**: The X-LoRA approach provides a straightforward way to implement dynamic adapter mixing in existing large language models (LLMs). The provided code allows for easy integration with models in the Hugging Face ecosystem.
+
+2. **Leverages LLM strength**: The scaling head in X-LoRA learns to exploit the inherent strengths of the base LLM by intelligently mixing and combining the outputs of different adapters, leveraging their specialized knowledge for different tasks or data distributions.
+
+3. **Adaptability**: During training, the X-LoRA model can learn sophisticated combinatorial methods by exposing it to complex samples, such as question-answer pairs or conversational data, allowing the model to learn the best way to mix adapters for different scenarios.
+
+4. **Interpretability**: The X-LoRA approach provides insights into how the model adapts its behavior by analyzing the scaling values and the activation patterns of different adapters for various inputs.
+
+Disadvantages of the X-LoRA approach:
+
+1. **Computational cost**: The X-LoRA approach requires two forward passes: one to calculate the hidden states for the scaling head, and another to apply the predicted scalings to the adapters. This additional computational cost can be a drawback, especially for resource-constrained environments.
+
+2. **Key-value cache management**: For efficient inference in model-serving tools like vLLM, separate key-value caches need to be tracked for the scaling and forward passes, which adds complexity to the implementation.
+
+3. **Potential for over-reliance on adapters**: While the X-LoRA approach allows for dynamic mixing of adapters, there is a risk of over-relying on the adapters and not fully utilizing the base model's capabilities, especially if the adapters are not well-trained or diverse enough.
+
+Despite the disadvantages, the authors argue that the advantage of the X-LoRA approach is its simplicity and compatibility with existing models without the need for internal restructuring. This advantage is particularly valuable given the vast resources available in the Hugging Face ecosystem, allowing for easy adoption and experimentation with the X-LoRA technique across different models and domains.
+
+## Resources
+1. API description and examples: https://github.com/EricLBuehler/xlora/tree/master?tab=readme-ov-file
+2. LoRA overview video: https://towardsdatascience.com/dive-into-lora-adapters-38f4da488ede
+3. X-LoRA overview video: 
+
+## Citation 
 
